@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.g1.laggers.Main_Menu"
+    tools:showIn="@layout/activity_main__menu"
+    android:background="@color/theme_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/gameButton"
+        android:width="150dp"
+        android:onClick="startGame"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#FFFFFF"
+        android:background="@color/theme_sub"
+        android:layout_above="@+id/InstructionsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:id="@+id/InstructionsButton"
+        android:width="150dp"
+        android:onClick="startInstructions"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#FFFFFF"
+        android:background="@color/theme_sub"
+        android:layout_above="@+id/leaderboardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leaderboards"
+        android:id="@+id/leaderboardButton"
+        android:width="150dp"
+        android:onClick="startLeaderboards"
+        android:textColor="#FFFFFF"
+        android:background="@color/theme_sub"
+        android:layout_above="@+id/creditButton"
+        android:layout_alignLeft="@+id/gameButton"
+        android:layout_alignStart="@+id/gameButton"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:id="@+id/creditButton"
+        android:width="150dp"
+        android:onClick="startAboutUs"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#FFFFFF"
+        android:background="@color/theme_sub"
+        android:layout_above="@+id/exitButton"
+        android:layout_alignLeft="@+id/leaderboardButton"
+        android:layout_alignStart="@+id/leaderboardButton"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exitButton"
+        android:width="150dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#FFFFFF"
+        android:background="@color/theme_sub"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/leaderboardButton"
+        android:layout_alignStart="@+id/leaderboardButton"
+        android:layout_marginBottom="21dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Laggers"
+        android:id="@+id/textView2"
+        android:background="#FFFFFF"
+        android:textColor="@color/theme_main"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_above="@+id/gameButton"
+        android:layout_alignParentTop="true"
+        android:singleLine="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="1-Hand"
+        android:id="@+id/oneStart"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="2-Hand"
+        android:id="@+id/twoHand" />
+</RelativeLayout>
