@@ -84,8 +84,8 @@ public class GamePane extends AppCompatActivity {
             button2.setVisibility(View.INVISIBLE);
 
         }else if(num ==2){
-            button1.setX(button1.getX() - button1.getWidth());
-            button2.setX(button2.getX() + button2.getWidth());
+            button1.setX(button1.getX() - 200);
+            button2.setX(button2.getX() + 200);
 
             button2.setOnTouchListener(new View.OnTouchListener() {
                 public boolean onTouch(View v, MotionEvent event) {
