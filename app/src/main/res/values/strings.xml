@@ -5,4 +5,5 @@
     <string name="title_activity_instructions">Instructions</string>
     <string name="title_activity_leaderboards">Leaderboards</string>
     <string name="title_activity_credits">Credits</string>
+    <string name="title_activity_game_pane">GamePane</string>
 </resources>

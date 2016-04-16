@@ -35,7 +35,7 @@ public class Main_Menu extends AppCompatActivity {
 
     public void startOne(View view){
         if(showOptions){
-
+            startActivity(new Intent(this, GamePane.class));
         }
     }
 

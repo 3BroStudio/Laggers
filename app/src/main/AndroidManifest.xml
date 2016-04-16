@@ -33,6 +33,10 @@
         <activity
             android:name=".Credits"
             android:label="@string/title_activity_credits"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GamePane"
+            android:label="@string/title_activity_game_pane"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
