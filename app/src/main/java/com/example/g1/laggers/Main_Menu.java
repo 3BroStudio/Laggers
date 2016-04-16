@@ -35,13 +35,17 @@ public class Main_Menu extends AppCompatActivity {
 
     public void startOne(View view){
         if(showOptions){
-            startActivity(new Intent(this, GamePane.class));
+            Intent i = new Intent(getApplicationContext(), GamePane.class);
+            i.putExtra("num_of_controllers", 1);
+            startActivity(i);
         }
     }
 
     public void startTwo(View view){
         if(showOptions){
-
+            Intent i = new Intent(getApplicationContext(), GamePane.class);
+            i.putExtra("num_of_controllers", 2);
+            startActivity(i);
         }
     }
 
