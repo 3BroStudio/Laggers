@@ -33,6 +33,18 @@ public class Main_Menu extends AppCompatActivity {
         }
     }
 
+    public void startOne(View view){
+        if(showOptions){
+
+        }
+    }
+
+    public void startTwo(View view){
+        if(showOptions){
+
+        }
+    }
+
     public void startInstructions(View view){
         startActivity(new Intent(this, Instructions.class));
     }
